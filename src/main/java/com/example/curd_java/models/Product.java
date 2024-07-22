@@ -27,7 +27,7 @@ public class Product {
     @Column(columnDefinition = "TEXT") // for large text fields
     private String description;
     private Date createdAt;
-    private String imageFileName;
+    
 
     // Getters and Setters
     public int getId() {
@@ -86,11 +86,4 @@ public class Product {
         this.createdAt = createdAt;
     }
 
-    public String getImageFileName() {
-        return imageFileName;
-    }
-
-    public void setImageFileName(String imageFileName) {
-        this.imageFileName = imageFileName;
-    }
 }
