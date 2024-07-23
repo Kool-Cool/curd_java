@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container mt-5">
+        <a class="btn btn-primary" href="/products/create">Add Prodcut</a>
         <h2>Product List</h2>
         <table class="table table-striped">
             <thead>
@@ -34,7 +35,7 @@
                     <td th:text="${#dates.format(product.createdAt, 'dd-MM-yyyy')}"></td>
                     <td>
                         <a th:href="@{'/products/edit/' + ${product.id}}" class="btn btn-primary btn-sm">Edit</a>
-                        <a th:href="@{'/products/delete/' + ${product.id}}" class="btn btn-danger btn-sm">Delete</a>
+                        <a th:href="@{'/products/delete/' + ${product.id}}" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
             </tbody>

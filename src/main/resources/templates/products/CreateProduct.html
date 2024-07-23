@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        th:object="${productDto}
+        <!-- <h2>Create Product</h2>
+        <form  method="post" th:object="${productDto}">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" id="name" th:field="${productDto.name}" required>
+            </div> -->
+            <!-- <div class="form-group">
+                <label for="brand">Brand</label>
+                <input type="text" class="form-control" id="brand" th:field="${productDto.brand}" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <input type="text" class="form-control" id="category" th:field="${productDto.category}" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" th:field="${productDto.price}" min="0" step="0.01"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" th:field="${productDto.description}" rows="3"
+                    minlength="10" maxlength="2000" required></textarea>
+            </div> -->
+            <button type="submit" class="btn btn-primary">Create Product</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
